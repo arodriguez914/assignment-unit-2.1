@@ -50,12 +50,12 @@ console.log(allowedPets);
 
 
 let result = '';
-if (adventurous == true) {
+if (adventurous === true) {
   result = 'Adventures are great!';
 } else {
   result = 'How about we stay home';
 }
-console.log(result);
+console.log (result);
 
 // 13 - Create a variable called `diceRoll` and set it to the value of "Try again later.".
 //      Create a compound conditional: 
@@ -95,7 +95,15 @@ console.log (petStatus);
 //      assigns the highest value to `mostPets`. There's several possibilities --
 //      be sure to think through all the scenarios. 
 //      console.log `mostPets` after the conditional has run.
+let mostPets = '';
 
+if (pets < friendsPets) {
+  mostPets = friendsPets;
+} else {
+  mostPets = pets;
+}
+
+console.log(mostPets);
 
 // 16 - Make a variable called `luckyResult`
 //      Write a *switch* statement that sets `luckyResult` to:
@@ -106,8 +114,25 @@ console.log (petStatus);
 //      You'll need to research how to use switch statements!
 //      console.log `luckyResult` after the conditional has run.
 
+let luckyResult = 7;
+
+switch (luckyResult) {
+  case 1:
+    console.log ("First is the worst");
+    break;
+  case 2:
+    console.log ("Second is the best");
+    break;
+  case 3:
+    console.log ("Third is the one with the polka dot dress");
+    break;
+  default:
+    console.log ("Luck is what happens when preparation meets opportunity");
+}
+
 // 17 -- Rewrite question 12 with a `ternary` operator. You'll need to do research!
 
+console.log(result) ? 'Adventures are great!' : 'How about we stay home';
 
 
 
